@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+.light-mode {
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #f4f7fa;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.download-csv-button {
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 1rem;
+}
+
+.download-csv-button:hover {
+  background-color: #45A049;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+thead {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+th {
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px; /* espaço para a seta */
+}
+
+th::after {
+  content: '';
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: transparent transparent transparent transparent;
+}
+
+th.ascending::after {
+  border-color: #333 transparent transparent transparent;
+  border-width: 0 5px 5px 5px;
+}
+
+th.descending::after {
+  border-color: transparent transparent #333 transparent;
+  border-width: 5px 5px 0 5px;
+}
+
+footer{
+  text-align: center;
+}
